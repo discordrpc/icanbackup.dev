@@ -1,0 +1,32 @@
+@function randomNum($min, $max) {
+  $rand: random();
+  $randomNum: $min + floor($rand * (($max - $min) + 1));
+
+  @return $randomNum;
+}
+
+.align-right {
+  float: right;
+}
+
+.box-shadow {
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+:root {
+  --light-blue: #b8dbe4;
+  --white: #fafafa;
+
+  --text-color: #3a3a3a;
+  --text-font: "Source Sans Pro", sans-serif, emoji;
+  --text-font-mono: "Source Code Pro", monospace;
+}
+
+body {
+  color: var(--text-color);
+  font-family: var(--text-font);
+}

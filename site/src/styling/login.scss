@@ -1,0 +1,93 @@
+@import './index.scss';
+
+.container {
+  background: var(--white);
+  border-radius: 6px;
+  margin: 100px auto;
+  width: 35vh;
+  padding: 60px;
+}
+
+.titles {
+  margin-bottom: 50px;
+}
+
+.title, .sub-title {
+  text-align: center;
+  margin: 0;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.sub-title {
+  font-size: 18px;
+}
+
+.form {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.form input {
+  font-size: 18px;
+  padding: 5px 20px 5px 5px;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.form svg {
+  height: 25px;
+  margin-bottom: -5px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+.form-input {
+  display: block;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.form-feedback p {
+  color: #ff3535;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 0px;
+  margin-bottom: 30px;
+}
+
+.option, .option label, .option input {
+  cursor: pointer;
+}
+
+.form-submit {
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  font-size: 18px;
+  border-radius: 30px;
+  background-color: #4285f4;
+  color: var(--white);
+  margin-bottom: 5px;
+
+  &:hover {
+    background-color: #5e98f5;
+  }
+}

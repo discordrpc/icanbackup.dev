@@ -1,0 +1,36 @@
+@import './index.scss';
+
+nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+}
+
+a, button {
+  color: inherit;
+  font-size: 16px;
+  border-radius: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 12px;
+  margin: 0 -12px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #0000001a;
+  }
+}
+
+.nav-main {
+  background-color: var(--white);
+  border: 2px solid #161616;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.nav-logo {
+  height: 26px;
+}
