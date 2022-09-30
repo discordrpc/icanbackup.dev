@@ -4,11 +4,12 @@
   @for $i from 1 through 20 {
     &:nth-child(#{$i}) {
       $size: #{randomNum(30, 100)}px;
+      $duration: randomNum(15, 30);
       left: random(100) + 0%;
       width: $size;
       height: $size;
-      animation-delay: random(10)s;
-      animation-duration: #{randomNum(15, 30)}s;
+      animation-delay: #{randomNum(-$duration + 5, 10)}s;
+      animation-duration: #{$duration}s;
     }
   }
 }
