@@ -15,10 +15,6 @@ const Login = () => {
     setTimeout(() => {
       err.innerHTML = 'Incorrect password, please try again.';
       err.classList.remove('hidden');
-
-      setTimeout(() => {
-        err.classList.add('hidden');
-      }, 3000);
     }, 300);
   }
 
